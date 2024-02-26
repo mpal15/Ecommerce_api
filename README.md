@@ -166,3 +166,7 @@ Copy code
 }
 
 
+![Screenshot (103)](https://github.com/mpal15/Ecommerce_api/assets/62149463/237b36a9-eebd-445d-88cd-98b06015945d)
+![Screenshot (104)](https://github.com/mpal15/Ecommerce_api/assets/62149463/0a2bd9d9-ec5e-40ae-ab4e-1933ace857d6)
+![Screenshot (106)](https://github.com/mpal15/Ecommerce_api/assets/62149463/a25662a8-8d9a-4f7c-bb7c-761359f797e1)
+![Screenshot (107)](https://github.com/mpal15/Ecommerce_api/assets/62149463/92af46bd-af03-4804-b2c0-39c657a74aa6)

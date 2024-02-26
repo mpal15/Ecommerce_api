@@ -31,7 +31,7 @@ import cartRoute from "./router/cart.js"
 app.use("/cart",auth,cartRoute);
 // Order routes
 import orderRoute from "./router/order.js"
-app.use("/order",orderRoute);
+app.use("/order",auth,orderRoute);
 
 connectDB()
 .then(()=> {

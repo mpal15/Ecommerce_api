@@ -24,7 +24,8 @@ const verifyToken = (req, res, next) => {
       return res.status(401).json({ message: "Unauthorized - Invalid token" });
     }
   };
-// togel all product in cart
+// to get all product in cart
+// http://localhost:8000/cart/getCart
 router.get("/getCart", verifyToken, async (req, res) => {
     try {
       const userId = req.userId;
@@ -56,7 +57,8 @@ const checkEmptyOrderItemSchema = async (userId, productId, quantity) => {
     throw error;
   }
 };
-
+// create a new Cart
+// http://localhost:8000/cart/createCart
 router.post("/createCart", async (req, res) => {
   try {
     const { productId, quantity } = req.body;
@@ -121,6 +123,8 @@ router.post("/createCart", async (req, res) => {
 });
 
 // update the cart
+// to get all product in cart
+// http://localhost:8000/cart/updateCart
 router.put("/updateCart", verifyToken, async (req, res) => {
     try {
       const { productId, quantity } = req.body;
@@ -172,6 +176,7 @@ router.put("/updateCart", verifyToken, async (req, res) => {
 
 
 //remove the items in cart
+// http://localhost:8000/cart/removeCartItem/:productId
 router.delete("/removeCartItem/:productId", verifyToken, async (req, res) => {
     try {
       const productId = req.params.productId;

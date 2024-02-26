@@ -3,6 +3,8 @@ import { Category } from "../model/category.model.js";
 
 const router = express.Router();
 
+//get all category
+// http://localhost:8000/category/getAllCategory
 router.get("/getAllCategory",async(req,res)=>{
     try {
         const allcategory = await Category.find({});
@@ -13,7 +15,8 @@ router.get("/getAllCategory",async(req,res)=>{
         res.status(500).json({"message":"internal error"})
     }
 })
-
+//create a new category
+// http://localhost:8000/category/createCategory
 router.post("/createCategory" ,async(req,res)=>{
     try {
         const { name }  = req.body;

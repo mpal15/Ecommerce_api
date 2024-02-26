@@ -11,6 +11,8 @@ const router = express.Router();
 router.get("/alluser",(req,res)=>{
     res.send("hello  welcome to in the world")
 })
+//register the user
+// http://localhost:8000/users/register
 router.post("/register",async(req,res)=>{
   try {
     const { username ,email ,password } = req.body;
@@ -42,7 +44,8 @@ router.post("/register",async(req,res)=>{
 
 })
 
-
+//login  the user
+// http://localhost:8000/users/login
 router.post("/login",async(req,res)=>{
    try {
     const {email ,password} = req.body;

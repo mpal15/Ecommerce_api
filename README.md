@@ -31,7 +31,8 @@ bash
 Copy code
 
 Install dependencies:
-
+   ```base
+   npm install
 bash
 Copy code
 npm install
